@@ -1,0 +1,86 @@
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+#piechart-controls {
+    //text-align: center;
+
+}
+
+#piechart-instructions {
+    display: inline-block;
+    width: 600px;
+}
+
+
+table {
+    border-collapse: collapse;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+
+    display: inline-block;
+
+}
+
+td, th {
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 0;
+
+}
+
+.adjust-button {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 1px;
+}
+
+var {
+    width: 40px;
+    display: inline-block;
+}
+
+
+
+.progress_main{
+	height: 40px;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	margin-right:100px;
+}
+
+.progress_bar{
+	float: left;
+	height: 100%;
+	font-size: 12px;
+	line-height: 30px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.progress_bar:after {
+  content: attr(value)'%';
+}
+
+.progress_composer{
+	background-color: #FBA72E;
+	
+}
+.progress_composer:before{
+	content: "Music Composer";
+	text-align: center;
+}

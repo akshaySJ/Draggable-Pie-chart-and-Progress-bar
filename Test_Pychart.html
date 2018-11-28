@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pie Chart</title>
+    <link href="example.css" rel="stylesheet" type="text/css">
+    <script src="draggable-piechart.js"></script>
+    <script src="example.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		body{
+			background: #E1853D;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="row">
+		
+		<div class="col-md-6 col-lg-6">
+			<div id="piechart-controls" style="margin-top: 60px; margin-left:40px;">
+				<canvas id="piechart" width="400" height="400">Your browser is too old!</canvas>
+				<br />
+				<table id="proportions-table"></table>
+				<br />
+				<p id="piechart-instructions">
+					Drag the circles or click the buttons to adjust the pie chart. If a segment has gone,
+					you can get it back by clicking it's '+' button.
+				</p>
+
+			</div>
+		</div>
+		
+		<div class="col-md-6 col-lg-6">
+			<div class="progress_main" style="margin-top: 80px;">
+				<div class="progress_bar progress_composer" role="progressbar" value="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+				</div>
+			</div>
+			<div class="progress_main">
+				<div class="progress_bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+				  50% Complete (info)
+				</div>
+				<table id="proportions-table-update"></table>
+			</div>
+			<div class="progress_main">
+				<div class="progress_bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+				  60% Complete (warning)
+				</div>
+			</div>
+			<div class="progress_main">
+				<div class="progress_bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+				  70% Complete (danger)
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
